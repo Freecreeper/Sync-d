@@ -1,11 +1,6 @@
 {
   "images" : [
     {
-      "filename" : "character_red.png",
-      "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
       "filename" : "image_2025-08-30_102338652.png",
       "idiom" : "universal",
       "scale" : "1x"
