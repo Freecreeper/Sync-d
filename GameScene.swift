@@ -247,6 +247,52 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         addChild(restartButton)
     }
     
+    private func setupDefaultLevel() {
+        // Create a simple default level with walls around the edges
+        let screenSize = UIScreen.main.bounds
+        let screenWidth = screenSize.width
+        let screenHeight = screenSize.height
+        let wallSize: CGFloat = 40
+        
+        // Create boundary walls
+        let horizontalWallSize = CGSize(width: screenWidth, height: wallSize)
+        let verticalWallSize = CGSize(width: wallSize, height: screenHeight)
+        
+        // Top wall
+        createWall(at: CGPoint(x: screenWidth/2, y: screenHeight - wallSize/2), size: horizontalWallSize)
+        // Bottom wall
+        createWall(at: CGPoint(x: screenWidth/2, y: wallSize/2), size: horizontalWallSize)
+        // Left wall
+        createWall(at: CGPoint(x: wallSize/2, y: screenHeight/2), size: verticalWallSize)
+        // Right wall
+        createWall(at: CGPoint(x: screenWidth - wallSize/2, y: screenHeight/2), size: verticalWallSize)
+        
+        // Add a default character
+        let character = Character(color: .blue, size: CGSize(width: 30, height: 30))
+        character.position = CGPoint(x: screenWidth/2, y: screenHeight/2)
+        addChild(character)
+        characters.append(character)
+        
+        // Add an exit
+        let exit = SKSpriteNode(color: .green, size: CGSize(width: 40, height: 40))
+        exit.position = CGPoint(x: screenWidth - 100, y: 100)
+        exit.name = "exit"
+        exit.physicsBody = SKPhysicsBody(rectangleOf: exit.size)
+        exit.physicsBody?.isDynamic = false
+        exit.physicsBody?.categoryBitMask = 0x1 << 2 // Exit category
+        addChild(exit)
+        exitNode = exit
+    }
+    
+    private func createWall(at position: CGPoint, size: CGSize) {
+        let wall = SKSpriteNode(color: .brown, size: size)
+        wall.position = position
+        wall.physicsBody = SKPhysicsBody(rectangleOf: size)
+        wall.physicsBody?.isDynamic = false
+        wall.physicsBody?.categoryBitMask = 0x1 << 1 // Wall category
+        addChild(wall)
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else { return }
         let location = touch.location(in: self)
