@@ -1,0 +1,2 @@
+
+Command CompileAssetCatalogVariant failed with a nonzero exit code
