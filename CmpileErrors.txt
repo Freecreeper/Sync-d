@@ -1,2 +1,5 @@
 
-/Users/ebugg/Downloads/Zanes things/Sync'd/Sync-d/GameScene.swift:78:13 Cannot find 'setupDefaultLevel' in scope
+Could not find or use auto-linked framework 'CoreAudioTypes': framework 'CoreAudioTypes' not found
+Could not parse or use implicit file '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/SwiftUICore.framework/SwiftUICore.tbd': cannot link directly with 'SwiftUICore' because product being built is not an allowed client of it
+Undefined symbol: _main
+Linker command failed with exit code 1 (use -v to see invocation)
