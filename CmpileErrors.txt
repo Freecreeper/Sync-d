@@ -1,6 +1,8 @@
-
-Command CompileAssetCatalogVariant failed with a nonzero exit code
+Multiple commands produce '/Users/ebugg/Library/Developer/Xcode/DerivedData/Sync'd-gpsyxyxowbquhtbkvbrdrewsxomd/Build/Products/Debug-iphoneos/Sync'd.app/Info.plist'
+duplicate output file '/Users/ebugg/Library/Developer/Xcode/DerivedData/Sync'd-gpsyxyxowbquhtbkvbrdrewsxomd/Build/Products/Debug-iphoneos/Sync'd.app/Info.plist' on task: ProcessInfoPlistFile /Users/ebugg/Library/Developer/Xcode/DerivedData/Sync'd-gpsyxyxowbquhtbkvbrdrewsxomd/Build/Products/Debug-iphoneos/Sync'd.app/Info.plist /Users/ebugg/Library/Developer/Xcode/DerivedData/Sync'd-gpsyxyxowbquhtbkvbrdrewsxomd/Build/Intermediates.noindex/Sync'd.build/Debug-iphoneos/Sync'd.build/empty-Sync'd.plist
 Could not find or use auto-linked framework 'CoreAudioTypes': framework 'CoreAudioTypes' not found
 Could not parse or use implicit file '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/SwiftUICore.framework/SwiftUICore.tbd': cannot link directly with 'SwiftUICore' because product being built is not an allowed client of it
+
 Undefined symbol: _main
-Could not parse or use implicit file '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/SwiftUICore.framework/SwiftUICore.tbd': cannot link directly with 'SwiftUICore' because product being built is not an allowed client of it
+Linker command failed with exit code 1 (use -v to see invocation)
+

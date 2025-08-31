@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "image_2025-08-30_102338652.png",
+      "filename" : "character_red.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "image_2025-08-30_102338652 1.png",
+      "filename" : "character_red 1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "image_2025-08-30_102338652 2.png",
+      "filename" : "character_red 2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
