@@ -3,19 +3,34 @@ import SpriteKit
 class LevelSelectScene: SKScene {
     
     override func didMove(to view: SKView) {
+        print("LevelSelectScene: didMove to view with size: \(view.bounds.size)")
         backgroundColor = .darkGray
+        print("LevelSelectScene: Background color set")
         setupLevelButtons()
     }
     
     private func setupLevelButtons() {
+        print("LevelSelectScene: Setting up level buttons")
         let levels = LevelManager.shared.getLevels()
+        print("LevelSelectScene: Found \(levels.count) levels")
+        
+        if levels.isEmpty {
+            print("LevelSelectScene: No levels found")
+            let message = SKLabelNode(text: "No levels found")
+            message.position = CGPoint(x: frame.midX, y: frame.midY)
+            message.fontColor = .white
+            addChild(message)
+            return
+        }
         
         for (index, level) in levels.enumerated() {
             let button = SKLabelNode(text: level.name)
             button.name = "level\(level.id)"
             button.position = CGPoint(x: frame.midX, y: frame.midY - CGFloat(index * 60))
             button.fontColor = .white
+            button.horizontalAlignmentMode = .center
             addChild(button)
+            print("LevelSelectScene: Added button for level \(level.id) at \(button.position)")
         }
     }
     

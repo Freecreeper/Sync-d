@@ -63,6 +63,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     private func loadLevel() {
+        print("GameScene: Loading level \(currentLevel)")
+        
         // Clear existing nodes
         removeAllChildren()
         characters.removeAll()
@@ -73,11 +75,19 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         exitNode = nil
         
         // Load level data
-        guard let levelData = LevelManager.shared.loadLevelData(levelId: currentLevel),
-              let levelJson = try? JSONSerialization.jsonObject(with: levelData, options: []) as? [String: Any] else {
+        guard let levelData = LevelManager.shared.loadLevelData(levelId: currentLevel) else {
+            print("GameScene: Failed to load level data for level \(currentLevel)")
             setupDefaultLevel()
             return
         }
+        
+        guard let levelJson = try? JSONSerialization.jsonObject(with: levelData, options: []) as? [String: Any] else {
+            print("GameScene: Failed to parse level JSON for level \(currentLevel)")
+            setupDefaultLevel()
+            return
+        }
+        
+        print("GameScene: Successfully loaded level \(currentLevel) data")
         
         // Create walls
         if let walls = levelJson["walls"] as? [[String: Any]] {
