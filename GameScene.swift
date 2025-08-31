@@ -110,38 +110,39 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             // Reset positions
             player1.position = CGPoint(x: size.width * 0.3, y: size.height * 0.5)
             player2.position = CGPoint(x: size.width * 0.7, y: size.height * 0.5)
-        // Character-door collision
-        if collision == PhysicsCategory.character | PhysicsCategory.door {
-            SoundManager.shared.playSoundEffect(filename: "door_open.wav")
-            checkLevelCompletion()
+            // Character-door collision
+            if collision == PhysicsCategory.character | PhysicsCategory.door {
+                SoundManager.shared.playSoundEffect(filename: "door_open.wav")
+                checkLevelCompletion()
+            }
+            
+            // Character-hazard collision
+            if collision == PhysicsCategory.character | PhysicsCategory.hazard {
+                SoundManager.shared.playSoundEffect(filename: "death.wav")
+                loadLevel() // Restart on hazard touch
+            }
+            
+            // Character-key collision
+            if collision == PhysicsCategory.character | PhysicsCategory.key {
+                SoundManager.shared.playSoundEffect(filename: "key_pickup.wav")
+                addScore(points: 50)
+            }
+            
+            // Character-button collision
+            if collision == PhysicsCategory.character | PhysicsCategory.button {
+                SoundManager.shared.playSoundEffect(filename: "button_press.wav")
+                // Handle button press
+            }
         }
         
-        // Character-hazard collision
-        if collision == PhysicsCategory.character | PhysicsCategory.hazard {
-            SoundManager.shared.playSoundEffect(filename: "death.wav")
-            loadLevel() // Restart on hazard touch
+        private func checkLevelCompletion() {
+            // Check if all characters reached the door
+            // TODO: Implement actual completion check
+            
+            // For now, just advance to next level
+            addScore(points: timeRemaining * 10)
+            currentLevel += 1
+            loadLevel()
         }
-        
-        // Character-key collision
-        if collision == PhysicsCategory.character | PhysicsCategory.key {
-            SoundManager.shared.playSoundEffect(filename: "key_pickup.wav")
-            addScore(points: 50)
-        }
-        
-        // Character-button collision
-        if collision == PhysicsCategory.character | PhysicsCategory.button {
-            SoundManager.shared.playSoundEffect(filename: "button_press.wav")
-            // Handle button press
-        }
-    }
-    
-    private func checkLevelCompletion() {
-        // Check if all characters reached the door
-        // TODO: Implement actual completion check
-        
-        // For now, just advance to next level
-        addScore(points: timeRemaining * 10)
-        currentLevel += 1
-        loadLevel()
     }
 }

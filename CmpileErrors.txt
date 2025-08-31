@@ -1,8 +1,10 @@
-Multiple commands produce '/Users/ebugg/Library/Developer/Xcode/DerivedData/Sync'd-gpsyxyxowbquhtbkvbrdrewsxomd/Build/Products/Debug-iphoneos/Sync'd.app/Info.plist'
-duplicate output file '/Users/ebugg/Library/Developer/Xcode/DerivedData/Sync'd-gpsyxyxowbquhtbkvbrdrewsxomd/Build/Products/Debug-iphoneos/Sync'd.app/Info.plist' on task: ProcessInfoPlistFile /Users/ebugg/Library/Developer/Xcode/DerivedData/Sync'd-gpsyxyxowbquhtbkvbrdrewsxomd/Build/Products/Debug-iphoneos/Sync'd.app/Info.plist /Users/ebugg/Library/Developer/Xcode/DerivedData/Sync'd-gpsyxyxowbquhtbkvbrdrewsxomd/Build/Intermediates.noindex/Sync'd.build/Debug-iphoneos/Sync'd.build/empty-Sync'd.plist
-Could not find or use auto-linked framework 'CoreAudioTypes': framework 'CoreAudioTypes' not found
-Could not parse or use implicit file '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/SwiftUICore.framework/SwiftUICore.tbd': cannot link directly with 'SwiftUICore' because product being built is not an allowed client of it
 
-Undefined symbol: _main
-Linker command failed with exit code 1 (use -v to see invocation)
-
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:15:6 Consecutive declarations on a line must be separated by ';'
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:15:6 Expected declaration
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:49:9 Cannot find 'player1' in scope
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:62:9 Cannot find 'player2' in scope
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:122:17 Cannot find 'loadLevel' in scope
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:128:17 Cannot find 'addScore' in scope
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:138:9 Attribute 'private' can only be used in a non-local scope
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:143:30 Cannot find 'timeRemaining' in scope
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:145:13 Cannot find 'loadLevel' in scope
