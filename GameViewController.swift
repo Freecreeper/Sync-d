@@ -11,12 +11,10 @@ class GameViewController: UIViewController {
             view.showsFPS = true
             view.showsNodeCount = true
             
-            // Create and configure the scene
-            let scene = GameScene(size: view.bounds.size)
-            scene.scaleMode = .aspectFill
-            
-            // Present the scene
-            view.presentScene(scene)
+            // Create and present the main menu
+            let menuScene = MainMenuScene(size: view.bounds.size)
+            menuScene.scaleMode = .aspectFill
+            view.presentScene(menuScene)
         }
     }
     
