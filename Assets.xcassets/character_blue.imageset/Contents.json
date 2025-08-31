@@ -1,18 +1,30 @@
 {
   "images" : [
     {
-      "filename" : "Capture.PNG",
+      "filename" : "character_blue.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Capture 1.PNG",
+      "filename" : "character_blue 1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Capture 2.PNG",
+      "filename" : "character_blue 2.png",
       "idiom" : "universal",
+      "scale" : "3x"
+    },
+    {
+      "idiom" : "iphone",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "iphone",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "iphone",
       "scale" : "3x"
     }
   ],
