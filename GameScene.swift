@@ -1,16 +1,6 @@
 import SpriteKit
 import AVFoundation
 
-// Physics Categories
-struct PhysicsCategory {
-    static let none: UInt32 = 0
-    static let player1: UInt32 = 0b1
-    static let player2: UInt32 = 0b10
-    static let obstacle: UInt32 = 0b100
-    static let goal: UInt32 = 0b1000
-    static let hazard: UInt32 = 0b10000
-}
-
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
     // Game elements
