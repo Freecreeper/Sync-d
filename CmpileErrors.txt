@@ -1,9 +1,24 @@
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameOverScene.swift:98:32 Cannot find 'gameScene' in scope
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameOverScene.swift:98:55 Cannot find 'transition' in scope
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:5:8 Invalid redeclaration of 'PhysicsCategory'
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:120:9 Cannot find 'startGameTimer' in scope
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:130:64 Type 'PhysicsCategory' has no member 'player1'
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:131:67 Type 'PhysicsCategory' has no member 'obstacle'
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:131:76 Cannot convert value of type 'UInt8' to expected argument type 'UInt32'
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:131:94 Type 'PhysicsCategory' has no member 'goal'
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:141:64 Type 'PhysicsCategory' has no member 'player2'
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:142:67 Type 'PhysicsCategory' has no member 'obstacle'
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:142:76 Cannot convert value of type 'UInt8' to expected argument type 'UInt32'
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:142:94 Type 'PhysicsCategory' has no member 'goal'
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:152:61 Type 'PhysicsCategory' has no member 'goal'
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:153:64 Type 'PhysicsCategory' has no member 'player1'
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:153:72 Cannot assign value of type 'UInt8' to type 'UInt32'
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:153:90 Type 'PhysicsCategory' has no member 'player2'
 
-/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/Character.swift:27:56 Type 'PhysicsCategory' has no member 'character'
-/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/Character.swift:28:59 Reference to member 'door' cannot be resolved without a contextual type
-/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/Character.swift:28:82 Reference to member 'key' cannot be resolved without a contextual type
-/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/Character.swift:32:8 Invalid redeclaration of 'PhysicsCategory'
-/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/Character.swift:32:8 Invalid redeclaration of 'PhysicsCategory'
-/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/Hazard.swift:17:56 Ambiguous use of 'hazard'
-/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/LevelSelectScene.swift:14:42 Value of type 'LevelManager' has no member 'getLevels'
-/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/LevelSelectScene.swift:54:19 'currentLevel' is inaccessible due to 'private' protection level
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:163:65 Type 'PhysicsCategory' has no member 'obstacle'
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:201:42 Type 'PhysicsCategory' has no member 'player1'
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:201:68 Type 'PhysicsCategory' has no member 'goal'
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:202:42 Type 'PhysicsCategory' has no member 'player2'
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:202:68 Type 'PhysicsCategory' has no member 'goal'
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:207:42 Type 'PhysicsCategory' has no member 'player1'
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:208:42 Type 'PhysicsCategory' has no member 'player2'
