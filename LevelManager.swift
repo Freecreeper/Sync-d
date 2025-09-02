@@ -21,11 +21,15 @@ struct LevelData: Codable {
 class LevelManager {
     static let shared = LevelManager()
     
-    private(set) var currentLevel = 1
+    var currentLevel = 1
     private let totalLevels = 20
     private var completedLevels: Set<Int> = []
     
     private init() {}
+    
+    func getLevels() -> [LevelData] {
+        return (1...totalLevels).map { generateLevelData(level: $0) }
+    }
     
     func getCurrentLevelData() -> LevelData? {
         return generateLevelData(level: currentLevel)

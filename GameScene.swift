@@ -46,7 +46,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var levelComplete = false
     
     // MARK: - Game State
-    private var currentLevel = 1
+    var currentLevel = 1
     
     private func gameOver() {
         gameTimer?.invalidate()
@@ -272,5 +272,4 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let gameOverScene = GameOverScene(size: size, score: score, isGameComplete: true)
         view?.presentScene(gameOverScene, transition: .fade(withDuration: 0.5))
     }
-    }
-
+}

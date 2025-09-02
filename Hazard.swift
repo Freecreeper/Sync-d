@@ -14,6 +14,6 @@ class Hazard: SKSpriteNode {
     private func setupPhysics() {
         physicsBody = SKPhysicsBody(rectangleOf: size)
         physicsBody?.isDynamic = false
-        physicsBody?.categoryBitMask = PhysicsCategory.hazard
+        physicsBody?.categoryBitMask = PhysicsCategory.hazard  // Now uses shared PhysicsCategory
     }
 }

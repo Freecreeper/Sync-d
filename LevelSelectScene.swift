@@ -51,7 +51,7 @@ class LevelSelectScene: SKScene {
         
         let gameScene = GameScene(size: view.bounds.size)
         gameScene.scaleMode = .aspectFill
-        gameScene.currentLevel = levelId
+        LevelManager.shared.currentLevel = levelId  // Use shared LevelManager
         
         view.presentScene(gameScene)
     }
