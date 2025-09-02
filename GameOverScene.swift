@@ -1,4 +1,6 @@
 import SpriteKit
+import UIKit
+import SwiftUI
 
 class GameOverScene: SKScene {
     

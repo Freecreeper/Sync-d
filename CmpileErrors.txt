@@ -1,10 +1,9 @@
 
-/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:15:6 Consecutive declarations on a line must be separated by ';'
-/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:15:6 Expected declaration
-/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:49:9 Cannot find 'player1' in scope
-/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:62:9 Cannot find 'player2' in scope
-/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:122:17 Cannot find 'loadLevel' in scope
-/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:128:17 Cannot find 'addScore' in scope
-/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:138:9 Attribute 'private' can only be used in a non-local scope
-/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:143:30 Cannot find 'timeRemaining' in scope
-/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/GameScene.swift:145:13 Cannot find 'loadLevel' in scope
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/Character.swift:27:56 Type 'PhysicsCategory' has no member 'character'
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/Character.swift:28:59 Reference to member 'door' cannot be resolved without a contextual type
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/Character.swift:28:82 Reference to member 'key' cannot be resolved without a contextual type
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/Character.swift:32:8 Invalid redeclaration of 'PhysicsCategory'
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/Character.swift:32:8 Invalid redeclaration of 'PhysicsCategory'
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/Hazard.swift:17:56 Ambiguous use of 'hazard'
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/LevelSelectScene.swift:14:42 Value of type 'LevelManager' has no member 'getLevels'
+/Users/ebugg/Downloads/Zanes things/Sync'd/Sync_d/Sync_d/LevelSelectScene.swift:54:19 'currentLevel' is inaccessible due to 'private' protection level
