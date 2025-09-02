@@ -6,6 +6,8 @@ class GameOverScene: SKScene {
     
     private let score: Int
     private let isGameComplete: Bool
+    var gameScene: GameScene?
+    var transition: SKTransition?
     
     init(size: CGSize, score: Int, isGameComplete: Bool = false) {
         self.score = score
@@ -58,7 +60,7 @@ class GameOverScene: SKScene {
         restartButton.fontColor = .green
         restartButton.fontSize = 28
         restartButton.position = CGPoint(x: size.width / 2, y: size.height * 0.25)
-        restartButton.name = "restart"
+        restartButton.name = "restartButton"
         addChild(restartButton)
         
         // Menu Button
@@ -75,27 +77,19 @@ class GameOverScene: SKScene {
         let location = touch.location(in: self)
         let nodes = self.nodes(at: location)
         
-        if let node = nodes.first {
-            switch node.name {
-            case "restart":
-                // Restart the game
-                let gameScene = GameScene(size: size)
-                gameScene.scaleMode = .aspectFill
-                let transition = SKTransition.fade(withDuration: 0.5)
-                view?.presentScene(gameScene, transition: transition)
-                
-            case "menu":
-                // Go to main menu
-                if let view = view {
-                    let menuScene = MainMenuScene(size: size)
-                    menuScene.scaleMode = .aspectFill
-                    view.presentScene(menuScene, transition: .fade(withDuration: 0.5))
-                }
-                
-            default:
-                break
+        if nodes.first?.name == "restartButton" {
+            if let gameScene = self.gameScene {
+                // Use the stored transition or create a default one
+                let transition = self.transition ?? SKTransition.fade(withDuration: 0.5)
+                self.view?.presentScene(gameScene, transition: transition)
             }
-            view?.presentScene(gameScene, transition: transition)
+        } else if nodes.first?.name == "menu" {
+            // Go to main menu
+            if let view = view {
+                let menuScene = MainMenuScene(size: size)
+                menuScene.scaleMode = .aspectFill
+                view.presentScene(menuScene, transition: .fade(withDuration: 0.5))
+            }
         }
     }
 }

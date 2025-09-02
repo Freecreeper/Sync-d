@@ -177,6 +177,23 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         hazards.append(hazard)
     }
     
+    private func startGameTimer() {
+        gameTimer = Timer.scheduledTimer(timeInterval: 1.0, 
+                                         target: self, 
+                                         selector: #selector(updateGameTimer), 
+                                         userInfo: nil, 
+                                         repeats: true)
+    }
+    
+    @objc private func updateGameTimer() {
+        timeRemaining -= 1
+        timeLabel.text = "Time: \(Int(timeRemaining))"
+        
+        if timeRemaining <= 0 {
+            gameOver()
+        }
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard !levelComplete, let touch = touches.first else { return }
         let location = touch.location(in: self)
